@@ -1,0 +1,68 @@
+xList.cmo: prelude.cmx 
+xList.cmx: prelude.cmx 
+xString.cmo: xList.cmx prelude.cmx 
+xString.cmx: xList.cmx prelude.cmx 
+env.cmo: xString.cmx xList.cmx prelude.cmx 
+env.cmx: xString.cmx xList.cmx prelude.cmx 
+xStream.cmo: xString.cmx xList.cmx prelude.cmx env.cmx 
+xStream.cmx: xString.cmx xList.cmx prelude.cmx env.cmx 
+math.cmo: xList.cmx prelude.cmx 
+math.cmx: xList.cmx prelude.cmx 
+time.cmo: prelude.cmx math.cmx 
+time.cmx: prelude.cmx math.cmx 
+xThread.cmo: xList.cmx time.cmx prelude.cmx math.cmx log.cmx 
+xThread.cmx: xList.cmx time.cmx prelude.cmx math.cmx log.cmx 
+containers.cmo: xThread.cmx xList.cmx prelude.cmx 
+containers.cmx: xThread.cmx xList.cmx prelude.cmx 
+device.cmo: prelude.cmx 
+device.cmx: prelude.cmx 
+security.cmo: xString.cmx prelude.cmx 
+security.cmx: xString.cmx prelude.cmx 
+logLib.cmo: xThread.cmx xString.cmx xList.cmx time.cmx prelude.cmx log.cmx 
+logLib.cmx: xThread.cmx xString.cmx xList.cmx time.cmx prelude.cmx log.cmx 
+io.cmo: xThread.cmx xString.cmx prelude.cmx logLib.cmx log.cmx 
+io.cmx: xThread.cmx xString.cmx prelude.cmx logLib.cmx log.cmx 
+timer.cmo: xThread.cmx xList.cmx time.cmx prelude.cmx logLib.cmx 
+timer.cmx: xThread.cmx xList.cmx time.cmx prelude.cmx logLib.cmx 
+pool.cmo: xThread.cmx timer.cmx time.cmx prelude.cmx 
+pool.cmx: xThread.cmx timer.cmx time.cmx prelude.cmx 
+comm.cmo: xThread.cmx xString.cmx time.cmx prelude.cmx log.cmx 
+comm.cmx: xThread.cmx xString.cmx time.cmx prelude.cmx log.cmx 
+cleanup.cmo: xThread.cmx prelude.cmx 
+cleanup.cmx: xThread.cmx prelude.cmx 
+poolLib.cmo: xThread.cmx prelude.cmx pool.cmx comm.cmx 
+poolLib.cmx: xThread.cmx prelude.cmx pool.cmx comm.cmx 
+commLib.cmo: xThread.cmx xString.cmx security.cmx prelude.cmx log.cmx \
+    comm.cmx 
+commLib.cmx: xThread.cmx xString.cmx security.cmx prelude.cmx log.cmx \
+    comm.cmx 
+apiComm.cmo: xString.cmx xStream.cmx prelude.cmx log.cmx commLib.cmx comm.cmx 
+apiComm.cmx: xString.cmx xStream.cmx prelude.cmx log.cmx commLib.cmx comm.cmx 
+apiCommLib.cmo: xString.cmx xStream.cmx prelude.cmx log.cmx commLib.cmx \
+    comm.cmx apiComm.cmx 
+apiCommLib.cmx: xString.cmx xStream.cmx prelude.cmx log.cmx commLib.cmx \
+    comm.cmx apiComm.cmx 
+cache.cmo: xThread.cmx time.cmx prelude.cmx cleanup.cmx 
+cache.cmx: xThread.cmx time.cmx prelude.cmx cleanup.cmx 
+utility.cmo: xThread.cmx time.cmx prelude.cmx log.cmx cleanup.cmx 
+utility.cmx: xThread.cmx time.cmx prelude.cmx log.cmx cleanup.cmx 
+deviceLib.cmo: xThread.cmx utility.cmx timer.cmx time.cmx security.cmx \
+    prelude.cmx log.cmx io.cmx device.cmx cleanup.cmx cache.cmx 
+deviceLib.cmx: xThread.cmx utility.cmx timer.cmx time.cmx security.cmx \
+    prelude.cmx log.cmx io.cmx device.cmx cleanup.cmx cache.cmx 
+xml.cmo: xString.cmx time.cmx 
+xml.cmx: xString.cmx time.cmx 
+httpComm.cmo: prelude.cmx log.cmx commLib.cmx comm.cmx apiCommLib.cmx 
+httpComm.cmx: prelude.cmx log.cmx commLib.cmx comm.cmx apiCommLib.cmx 
+httpCommLib.cmo: xString.cmx prelude.cmx httpComm.cmx commLib.cmx 
+httpCommLib.cmx: xString.cmx prelude.cmx httpComm.cmx commLib.cmx 
+externalConfigParser.cmo: externalConfigAbsyn.cmx externalConfigParser.cmi 
+externalConfigParser.cmx: externalConfigAbsyn.cmx externalConfigParser.cmi 
+externalConfigLexer.cmo: prelude.cmx externalConfigParser.cmi 
+externalConfigLexer.cmx: prelude.cmx externalConfigParser.cmx 
+externalConfig.cmo: xThread.cmx xString.cmx xList.cmx time.cmx prelude.cmx \
+    log.cmx io.cmx externalConfigParser.cmi externalConfigLexer.cmx \
+    externalConfigAbsyn.cmx env.cmx 
+externalConfig.cmx: xThread.cmx xString.cmx xList.cmx time.cmx prelude.cmx \
+    log.cmx io.cmx externalConfigParser.cmx externalConfigLexer.cmx \
+    externalConfigAbsyn.cmx env.cmx 

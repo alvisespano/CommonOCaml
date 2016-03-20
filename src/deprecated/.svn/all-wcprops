@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated
+END
+signal.ml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated/signal.ml
+END
+commonConfig.ml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated/commonConfig.ml
+END
+apiComm.old.ml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated/apiComm.old.ml
+END
+webApiComm.ml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated/webApiComm.ml
+END
+authApiComm.ml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/h-care/!svn/ver/8595/common-ocaml/trunk/src/deprecated/authApiComm.ml
+END

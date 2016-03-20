@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/h-care/!svn/ver/12918/common-ocaml/trunk/src/test
+END
+misc.ml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/h-care/!svn/ver/12918/common-ocaml/trunk/src/test/misc.ml
+END
+newclientserver.ml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/h-care/!svn/ver/8660/common-ocaml/trunk/src/test/newclientserver.ml
+END
+readerwriter.ml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/h-care/!svn/ver/10863/common-ocaml/trunk/src/test/readerwriter.ml
+END
+threadpool.ml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/h-care/!svn/ver/12623/common-ocaml/trunk/src/test/threadpool.ml
+END
+zip.ml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/h-care/!svn/ver/10281/common-ocaml/trunk/src/test/zip.ml
+END
+dynbuffer.ml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/h-care/!svn/ver/11656/common-ocaml/trunk/src/test/dynbuffer.ml
+END
+echoer.ml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/h-care/!svn/ver/9092/common-ocaml/trunk/src/test/echoer.ml
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/h-care/!svn/ver/9091/common-ocaml/trunk/src/test/makefile
+END
+authclientserver.ml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/h-care/!svn/ver/8948/common-ocaml/trunk/src/test/authclientserver.ml
+END
